@@ -53,8 +53,8 @@
                     <label for="prd_risco_nomeado_geada">Risco Nomeado Geada</label>
                     <select name="prd_risco_nomeado_geada" id="prd_risco_nomeado_geada" >
                         <option value="">Selecione uma opção</option>
-                        <option value="sim" {{ old('prd_risco_nomeado_geada') == 'sim' ? 'selected' : '' }}>Sim</option>
-                        <option value="nao" {{ old('prd_risco_nomeado_geada') == 'nao' ? 'selected' : '' }}>Não</option>
+                        <option value="0" {{ old('prd_risco_nomeado_geada') == 'Sim' ? 'selected' : '' }}>Sim</option>
+                        <option value="1" {{ old('prd_risco_nomeado_geada') == 'Não' ? 'selected' : '' }}>Não</option>
                     </select>
                     @error('prd_risco_nomeado_geada') <span class="error">{{ $message }}</span> @enderror
                 </div>
@@ -63,8 +63,8 @@
                     <label for="prd_risco_nomeado_granizo">Risco Nomeado Granizo</label>
                     <select name="prd_risco_nomeado_granizo" id="prd_risco_nomeado_granizo" >
                         <option value="">Selecione uma opção</option>
-                        <option value="sim" {{ old('prd_risco_nomeado_granizo') == 'sim' ? 'selected' : '' }}>Sim</option>
-                        <option value="nao" {{ old('prd_risco_nomeado_granizo') == 'nao' ? 'selected' : '' }}>Não</option>
+                        <option value="0" {{ old('prd_risco_nomeado_granizo') == 'sim' ? 'selected' : '' }}>Sim</option>
+                        <option value="1" {{ old('prd_risco_nomeado_granizo') == 'nao' ? 'selected' : '' }}>Não</option>
                     </select>
                     @error('prd_risco_nomeado_granizo') <span class="error">{{ $message }}</span> @enderror
                 </div>
